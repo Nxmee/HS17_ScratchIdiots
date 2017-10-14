@@ -1,8 +1,15 @@
-var selectedCatagory
-$(".CatagoryBox").click(function() {
-	if($("#playButton").is(":hidden")) {
-		$("#playButton").slideDown();
+
+$("document").ready(function(){
+	var selectedCategory
+$(".CategoryBox").click(function() {
+	
+	if($("#play").is(":hidden")) {
+		$("#play").slideDown();
 	}
-	selectedCatagory = parseInt(event.target.data("gameId"));
-	console.log(selectedCatagory);
-})
+
+	selectedCategory = parseInt($(this).data("gameid"));
+	$(".CategoryBox").css("background-color","turquoise");
+	$(this).css("background-color","green");
+	console.log("click");
+});
+});
