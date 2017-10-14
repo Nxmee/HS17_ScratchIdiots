@@ -18,7 +18,7 @@
 		},
 		{
 			"title":"Makes of car"
-			"difficulty":3
+			"difficulty":1
 			"names":[
 				"Alfa Romeo",
 				"Aston Martin",
@@ -36,7 +36,7 @@
 			"title":"Brands of phone"
 			"difficulty":2
 			"names":[
-				"Oneplus",
+				"OnePlus",
 				"Apple",
 				"Samsung",
 				"Sony",
@@ -50,7 +50,7 @@
 		},
 		{
 			"title":"Works by Charles Dickens"
-			"difficulty":5
+			"difficulty":3
 			"names":[
 				"The Pickwick Papers",
 				"Oliver Twist",
@@ -66,7 +66,7 @@
 		},
 		{
 			"title":"Astronomical Phenomena"
-			"difficulty":6
+			"difficulty":2
 			"names":[
 				"Constellation",
 				"Supernova",
@@ -78,6 +78,77 @@
 				"Asteroid",
 				"Winter solstice",
 				"Supermoon"
+			]
+		},
+		{
+			"title":"Football Teams"
+			"difficulty":3
+			"names":[
+				"Chelsea",
+				"Manchester United",
+				"Átletico Madrid",
+				"FC Barcelona",
+				"Real Madrid",
+				"Paris Saint Germain",
+				"Sheffield Wednesday",
+				"FC Bayern Munich",
+				"Crystal Palace",
+				"Juventus",
+				"Inter Milan"
+			]
+		},
+		{
+			"title":"Superheroes"
+			"difficulty":3
+			"names":[
+				"Captain America",
+				"Iron Man",
+				"Black Widow",
+				"The Hulk",
+				"Hawkeye",
+				"The Flash",
+				"Green Arrow",
+				"Firestorm",
+				"Black Canary",
+				"Heat Wave",
+				"Captain Cold"
+			]
+		},
+		{
+			"title":"Movie quotes"
+			"difficulty":3
+			"names":[
+				"I'll be back",
+				"Frankly, my dear, I don't give a damn",
+				"I'm gonna make him an offer he can't refuse",
+				"ET phone home",
+				"Here's looking at you, kid",
+				"Go ahead, make my day",
+				"There's no place like home",
+				"You can't handle the truth",
+				"You're gonna need a bigger boat",
+				"Show me the money",
+				"Houston, we have a problem"
+			]
+		},
+		{
+			"title":"Songs"
+			"difficulty":1
+			"names":[
+				"Take On Me",
+				"Billy Jean",
+				"Every Breath You Take",
+				"Livin' on a Prayer",
+				"Pour Some Sugar On Me",
+				"Another One Bites The Dust",
+				"You Spin Me Round",
+				"Total Eclipse of the Heart",
+				"Eye of the Tiger",
+				"Sweet Child O' Mine",
+				"I Wanna Dance With Somebody",
+				"Under Pressure",
+				"Papa Don't Preach",
+				"Karma Chameleon"
 			]
 		},
 	]
