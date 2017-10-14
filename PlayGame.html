@@ -1,57 +1,48 @@
 <!DOCTYPE html>
 <head>
   <title>Play Game!</title>
-  <link href="reset.css" rel="stylesheet">
-  <link href="stylesheet.css" rel="stylesheet">
+  <link href="CSS/reset.css" rel="stylesheet">
+  <link href="CSS/stylesheet.css" rel="stylesheet">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script type="text/javascript" src="./JS/jquery.pietimer.js"></script>
   <script type="text/javascript" src="./JS/game.js"></script>
 </head>
 
 <body>
+  <div id="wrapper">
   <header>
   
     <figure>
-<<<<<<< HEAD
-      <img src="logo.png" alt="Vowel Removements">
-      <figcaption>Tagline lol</figcaption>
-=======
       <img src="logo.png" alt="Vowel Removements" width="320px">
-      <figcaption>Tagline</figcaption>
->>>>>>> testing commit no changes
     </figure>
     
   </header>
-  <hr>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="PlayGame.html">Play</a></li>
-      <li>My Account</li>
-    </ul>
-  </nav>
-  <hr>
   
   <main>
-  <h1>Play!</h1>
-    <div id="Timer">
+
+    <div id="timer">
       <h3>Timer</h3>
     </div>
     
-    <h4>Current Round</h4>
-    <p id="category">Category<p>
-    <p>Chosen Word</p>
+    <div class="gamebox">
+      <h1 id="round">Current Round</h1>
+    </div>
+    <div class="gamebox">
+      <h2 id="category">Category</h2>
+      <p id="Hint">Chosen Word</p>
+    </div>
+    <div class="gamebox">
     <form>
       <input type="text" name="fname">
     </form>
-    <div id='button'>
-    </div>
-    <p id="Hint">Hint<p>
+    <div id='button'>Submit</div>
+  </div>
   </main>
   
   <footer>
     <hr>
     <p>&#169 Scratch Idiots</p>
   </footer>
+  </div>
 </body>
 </html>

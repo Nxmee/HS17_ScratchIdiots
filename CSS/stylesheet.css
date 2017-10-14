@@ -27,17 +27,59 @@ main h2{
 	font-weight:bold;
 }
 
-#instbox {
+.gamebox {
 	background-color: #0277bd;
-	margin: 1% 2%;
-	padding: 1% 2%;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	padding: 3% 2%;
+	box-shadow: 8px 8px 40px;
 }
-#instbox h1 {
+.gamebox h1 {
+	padding: 0% 2%;
+	margin-top: 1%;
+	font-size: 1.5em;
+	text-align: center;
+}
+.gamebox h2 {
+	font-size: 1.3em;
+	text-align: center;
+}
+.gamebox p {
+	padding: 2% 2%;
+	font-size: 1.2em;
+	text-align: center;
+}
+form { 
+	margin: 0 auto; 
+	width:100%;
+	text-align: center;
+}
+#button {
+	width: 250px;
+	height: 250px;
+	background-color: #58a5f0;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: center;
+	align-content: center;
+}
+
+.box {
+	background-color: #0277bd;
+	margin: 1% 4%;
+	padding: 1% 2%;
+	box-shadow: 8px 8px 40px;
+}
+.box h1 {
 	padding: 0% 2%;
 	margin-top: 1%;
 	font-size: 1.5em;
 }
-#instbox p {
+.box p {
 	padding: 2% 2%;
 	font-size: 1.2em;
 }
@@ -106,6 +148,13 @@ footer p {
 	font-size: 1.2em;
 }
 
+#timer {
+width: 10%
+margin-right: auto;
+margin-left: auto;
+padding: 1% 2%;
+}
+
 @media screen and (max-width: 500px) {
 body {
 	width: 100%;
@@ -113,9 +162,5 @@ body {
 img{
 	width:100%;
 }
-nav {
-	text-align: center;
-	padding-left:2.5%;
-	padding-right:2.5%;
-}
+
 }
