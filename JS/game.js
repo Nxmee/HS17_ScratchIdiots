@@ -158,14 +158,12 @@ function playGame(selectedCategory)
 		}
 		
 	]
-}
+	}
 	
-	// Set variables	
+	// Replace Labels	
 	
-	// Replace Labels
-	$("#category")	.html(dictionary.categories[selectedCategory].title);
 	
-		
+
 }
 
 var array = ranNum();
@@ -175,16 +173,22 @@ var randomNum = array[0];
 
 	// Don't know what this does (but think it's necessary)
 $("document").ready(function(){
-	var selectedCategory
+	var selectedCategory 
 	
 
 	// Submit button pressed
 $("#SubmitButton").click(function() 
 {		
-	nextWord(selectedCategory, randomNum);
+	checkInput(2, randomNum);	
 	index++;
 	console.log("Index:	" + index);
 	randomNum = array[index];
+	nextWord(2, randomNum);
+});
+
+$("#StartButton").click(function(){
+	
+	
 });
 
 

@@ -18,8 +18,10 @@ $(".CategoryBox").click(function() {
 
 // Play button clicked
 $("#PlayButton").click(function() {	
-	window.location = "PlayGame.html";
-	//playGame(selectedCategory);
+	
+	window.location = "PlayGame.html";	
+	playGame(selectedCategory);
+	
 });
 
 
