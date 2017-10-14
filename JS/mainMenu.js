@@ -8,8 +8,8 @@ $(".CategoryBox").click(function() {
 	}
 
 	selectedCategory = parseInt($(this).data("gameid"));
-	$(".CategoryBox").css("background-color","turquoise");
-	$(this).css("background-color","green");
+	$(".CategoryBox").css("background-color","#0277bd");
+	$(this).css("background-color","#58a5f0");
 	console.log("click");
 });
 });

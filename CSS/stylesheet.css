@@ -1,9 +1,14 @@
 body{
 	font-family:Arial;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-background-color: #424242;
-background-image: url("billie-holiday.png");
+    background-color: #1b1b1b;
+}
+#wrapper {
+	background-color: #424242; 
+	width: 80%;
+	margin: 0px auto;
+	align-content: center;
 }
 footer hr, nav hr{
     border: 0;
@@ -41,12 +46,11 @@ main h2{
 
 .CategoryBox
 {
-    font-family: Garamond;
-    font-size: 2em;    
-    border-radius: 100%;    
-    border: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;    
+    border-radius: 0%;    
     background-color: #0277bd;
-    height: 250px;
+    height: 150px;
     width: 250px;
     text-align: center;
 
@@ -57,7 +61,7 @@ main h2{
 	  justify-content:center;
 	  align-items:center;
     
-    box-shadow: 5px 5px 5px #000000;
+    box-shadow: 8px 8px 40px;
 }
 
 .CategoryBox:hover{
