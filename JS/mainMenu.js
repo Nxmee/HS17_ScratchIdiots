@@ -1,6 +1,8 @@
 
 $("document").ready(function(){
 	var selectedCategory
+
+// CategoryBox clicked
 $(".CategoryBox").click(function() {
 	
 	if($("#PlayButton").is(":hidden")) {
@@ -14,14 +16,10 @@ $(".CategoryBox").click(function() {
 
 });
 
-$("#PlayButton").click(function() {
-	
-	alert("OHHHH HES DONE IT AGAIN!");
-	/*
-	selectedCategory = parseInt($(this).data("gameid"));
-	$(".CategoryBox").css("background-color","turquoise");
-	$(this).css("background-color","green");
-	console.log("click");*/
+// Play button clicked
+$("#PlayButton").click(function() {	
+	window.location = "PlayGame.html";
+	playGame(selectedCategory);
 });
 
 

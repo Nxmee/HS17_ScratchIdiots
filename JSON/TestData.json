@@ -1,6 +1,7 @@
 {
-	"catagories" [
+	"categories" [
 		{
+			"identifier": 0
 			"title":"Shakespeare's plays"
 			"difficulty":1
 			"names":[

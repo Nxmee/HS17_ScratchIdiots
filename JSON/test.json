@@ -1,14 +1,10 @@
-// dictionary.categories[selectedCategory].title
-
-function playGame(selectedCategory)
 {
-	var dictionary =
-	{
-		categories: [
-		{ // 0
-			title:"Shakespeare's plays",
-			difficulty:1,
-			names:[
+	 
+		{
+			"identifier": 0
+			"title":"Shakespeare's plays"
+			"difficulty":1
+			"names":[
 				"Romeo and Juliet",
 				"A midsummer nights dream",
 				"Hamlet",
@@ -21,10 +17,10 @@ function playGame(selectedCategory)
 				"Antony and Cleopatra"
 			]
 		},
-		{	// 1
-			title:"Makes of car",
-			difficulty:1,
-			names:[
+		{
+			"title":"Makes of car"
+			"difficulty":1
+			"names":[
 				"Alfa Romeo",
 				"Aston Martin",
 				"Lamborghini",
@@ -37,10 +33,10 @@ function playGame(selectedCategory)
 				"Tesla"
 			]
 		},
-		{ 	// 2
-			title:"Brands of phone",
-			difficulty:2,
-			names:[
+		{
+			"title":"Brands of phone"
+			"difficulty":2
+			"names":[
 				"OnePlus",
 				"Apple",
 				"Samsung",
@@ -53,10 +49,10 @@ function playGame(selectedCategory)
 				"Google"
 			]
 		},
-		{	// 3
-			title:"Works by Charles Dickens",
-			difficulty:3,
-			names:[
+		{
+			"title":"Works by Charles Dickens"
+			"difficulty":3
+			"names":[
 				"The Pickwick Papers",
 				"Oliver Twist",
 				"Nicholas Nickleby",
@@ -69,10 +65,10 @@ function playGame(selectedCategory)
 				"The Pickwick Papers"
 			]
 		},
-		{	// 4
-			title:"Astronomical Phenomena",
-			difficulty:2,
-			names:[
+		{
+			"title":"Astronomical Phenomena"
+			"difficulty":2
+			"names":[
 				"Constellation",
 				"Supernova",
 				"Black Hole",
@@ -85,10 +81,10 @@ function playGame(selectedCategory)
 				"Supermoon"
 			]
 		},
-		{	// 5
-			title:"Football Teams",
-			difficulty:3,
-			names:[
+		{
+			"title":"Football Teams"
+			"difficulty":3
+			"names":[
 				"Chelsea",
 				"Manchester United",
 				"Átletico Madrid",
@@ -102,10 +98,10 @@ function playGame(selectedCategory)
 				"Inter Milan"
 			]
 		},
-		{	// 6
-			title:"Superheroes",
-			difficulty:3,
-			names:[
+		{
+			"title":"Superheroes"
+			"difficulty":3
+			"names":[
 				"Captain America",
 				"Iron Man",
 				"Black Widow",
@@ -119,9 +115,9 @@ function playGame(selectedCategory)
 				"Captain Cold"
 			]
 		},
-		{	// 7
-			title:"Movie quotes",
-			difficulty:3,
+		{
+			"title":"Movie quotes"
+			"difficulty":3
 			"names":[
 				"I'll be back",
 				"Frankly, my dear, I don't give a damn",
@@ -136,10 +132,10 @@ function playGame(selectedCategory)
 				"Houston, we have a problem"
 			]
 		},
-		{	// 8
-			title:"Songs",
-			difficulty:1,
-			names:[
+		{
+			"title":"Songs"
+			"difficulty":1
+			"names":[
 				"Take On Me",
 				"Billy Jean",
 				"Every Breath You Take",
@@ -149,17 +145,12 @@ function playGame(selectedCategory)
 				"You Spin Me Round",
 				"Total Eclipse of the Heart",
 				"Eye of the Tiger",
-				"Sweet Child O Mine",
+				"Sweet Child O' Mine",
 				"I Wanna Dance With Somebody",
 				"Under Pressure",
 				"Papa Don't Preach",
 				"Karma Chameleon"
 			]
-		}
-		
-	]
-}
-	
-	document.getElementById("category").innerHTML = "New text inside the text element!";
+		},
 	
 }
