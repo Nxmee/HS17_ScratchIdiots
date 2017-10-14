@@ -1,20 +1,26 @@
 function convert(inputString) {
 	var numSpaces = (inputString.match(/ /g) || []).length;
-	var stringStripped = inputString.replace(/[aeiou ]/ig,'').toLowerCase;
-	var locs = new Array(numSpaces - 1);
-	for (i = 0; i < numSpaces; i++) { 
-		//generating a location between 1 and the index of the second to last item
-    
-    	while (1 == 1) {
-    		var locs[i] = Math.ceiling(Math.random() * stringStripped.length - 2);
-    		for (j = i; j > 0; j-- ) {
-    			if (locs[i] == locs[j]) {
-    				continue
-    			}
-    		}
-    		break
+	console.log(numSpaces);
+	var stringStripped = inputString.replace(/[aeiou ]/ig,'').toLowerCase();
+	
+
+	unique_random_numbers = [];
+                                    //Natural numbers than existemt in a
+                                    // given range
+	while (unique_random_numbers.length < numSpaces) {
+   		 var random_number = Math.round(Math.random()*(stringStripped.length - 3) + 1);
+    	console.log(random_number);
+    	if (unique_random_numbers.indexOf(random_number) == -1) { 
+        // Yay! new random number
+
+    	    unique_random_numbers.push( random_number );
+
     	}
-    	stringStripped = stringStripped.substring(0,locs[i] ) + " " + stringStripped.substring(locs[i]);
 	}
-	return stringStripped;
+
+	unique_random_numbers = unique_random_numbers.sort();
+	for (i = 0; i < unique_random_numbers.length; i++) { 
+		stringStripped = [stringStripped.slice(0, unique_random_numbers[i] + i), " ", stringStripped.slice(unique_random_numbers[i] + i)].join('');
+	} 
+	return stringStripped; 
 }
