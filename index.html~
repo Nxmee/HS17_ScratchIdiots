@@ -1,38 +1,49 @@
-<!DOCTYPE html>
-<head>
+<html><head>
   <title>Vowel Removements!</title>
-  <link href="reset.css" rel="stylesheet">
-  <link href="stylesheet.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="CSS/reset.css" rel="stylesheet">
+  <link href="CSS/stylesheet.css" rel="stylesheet">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script type="text/javascript" src="./JS/jquery.pietimer.js"></script>
+  <script type="text/javascript" src="./JS/mainMenu.js"></script>
+  <script type="text/javascript" src="./JS/game.js"></script>
+  <script src="JS/testScript.js"></script>
 </head>
 
 <body>
+  <div id="wrapper">
   <header>
     <figure>
-      <img src="logo.png" alt="Vowel Removements">
-      <figcaption>Tagline</figcaption>
+      <img src="logo.png" alt="Vowel Removements" width="320px">
     </figure>
       <hr>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="PlayGame.html">Play</a></li>
-      <li>My Account</li>
-    </ul>
-    <hr>
-  </nav>
-
-  
+  </header> 
   <main>
-  <h1>Home</h1>
-    <h2>Instructions</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <div id="InstBox">
+    <h1>Instructions</h1>
+    <p>Select a category below. You have 10 seconds to guess each phrase in the selected category. Each phrase has had all it's vowels removed and all it's spaces scrambled. There are 5 rounds and the most correct wins
+    </p>
+  </div>
+	<div id="CatWrapper">
+      <div class="CategoryBox" data-gameid="0">Shakespeare's Plays</div>
+      <div class="CategoryBox" data-gameid="1">Makes of Car</div>
+      <div class="CategoryBox" data-gameid="2">Brands of Phone</div>
+      <div class="CategoryBox" data-gameid="3">Works by Charles Dickens</div>
+      <div class="CategoryBox" data-gameid="4">Astronomical Phenomena</div>
+      <div class="CategoryBox" data-gameid="5">Football Teams</div>
+	  <div class="CategoryBox" data-gameid="6">Superheroes</div>
+	  <div class="CategoryBox" data-gameid="7">Movie Quotes</div>
+	  <div class="CategoryBox" data-gameid="8">Songs</div>        
+  </div>
+	
+	<div id = "DivButton">
+	<button id="PlayButton" type="button">Click Me!</button>
+	</div>
+	
+  </main>
   <footer>
-    <hr>
-    <p>&#169 Scratch Idiots</p>
+    <p>© Scratch Idiots 2017</p>
   </footer>
+</div>
 </body>
 </html>
