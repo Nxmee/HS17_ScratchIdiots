@@ -87,8 +87,8 @@ main h2{
 	
 	width: 50%;
 	background-color: lime;
-		visibility:	visible;
-		height: 15%;
+	visibility:	visible;
+	height: 15%;
 }
 
 @media screen and (max-width: 500px) {
