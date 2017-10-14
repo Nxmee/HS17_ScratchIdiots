@@ -1,6 +1,6 @@
-function test(){
-	alert("You are running this code!");
+function test(name, age){
+	alert("Your name is " + name + " and you are " + age + " years old");
 }
 
-test();
-test();
+test("Russell", 18);
+test("Lawrence", 21);
