@@ -1,6 +1,6 @@
 body{
 	font-family:Arial;
-    width: 98%;
+    width: 80%;
     margin: 0 auto;
 background-color: #0074b3;
 background-image: url("billie-holiday.png");
@@ -37,6 +37,36 @@ main h2{
 	font-size:1.1em;     
 	font-weight:bold;
 }
+
+
+.CategoryBox
+{
+    font-family: Garamond;
+    font-size: 2em;    
+    border-radius: 25%;    
+    border: 3px solid blue;
+    background-color: turquoise;
+    height: 250px;
+    text-align: center;
+
+    margin: 10%;        
+    vertical-align:central;
+    
+      display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  height:250px;
+    
+    
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns:   33% 33% 33%;
+	text-align:center;
+}
+
 @media screen and (max-width: 500px) {
 body {
 	width: 100%;
