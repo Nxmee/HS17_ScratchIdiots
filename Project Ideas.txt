@@ -2,5 +2,7 @@ Game:
   Platformer
   Puzzle
   RPG
+  Word game (removed vowels)
 Website:
   Rubik's cube timer (Chris vanity project)
+
