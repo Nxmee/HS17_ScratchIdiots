@@ -72,6 +72,9 @@ main h2{
     grid-template-columns:   33% 33% 33%;
 	text-align:center;
 	align-items:center;
+	width: 80%;
+	margin-left: auto ;
+    margin-right: auto ;
 }
 
 
@@ -85,9 +88,13 @@ main h2{
 #PlayButton{
 	
 	width: 50%;
-	background-color: lime;
+	margin-left: auto ;
+    margin-right: auto ;
+	background-color: #004c8c;
+	border: 0 ;
 	visibility:	visible;
 	height: 15%;
+	box-shadow: 8px 8px 40px;
 }
 footer {
 	margin: 1% 2%;
