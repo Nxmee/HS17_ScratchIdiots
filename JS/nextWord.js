@@ -1,8 +1,5 @@
-// dictionary.categories[selectedCategory].title
-
-function playGame(selectedCategory)
-{
-	var dictionary =
+function nextWord(selectedCategory, index){
+var dictionary =
 	{
 		categories: [
 		{ // 0
@@ -159,22 +156,10 @@ function playGame(selectedCategory)
 		
 	]
 }
-	
-	// Set variables	
-	
-	// Replace Labels
-	$("#category").html(dictionary.categories[selectedCategory].title);
-	
-		
+
+alert("words");
+$("#Hint").html("Changing the hint");
+
+
+
 }
-
-$("document").ready(function(){
-	var selectedCategory
-
-$("#SubmitButton").click(function() 
-{	
-	alert("You pressed the button");
-
-});
-
-});
