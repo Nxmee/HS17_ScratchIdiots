@@ -5,20 +5,14 @@
   <link href="stylesheet.css" rel="stylesheet">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script type="text/javascript" src="./JS/jquery.pietimer.js"></script>
-  <script type="text/javascript" src="./JS/game.js"></script>
 </head>
 
 <body>
   <header>
   
     <figure>
-<<<<<<< HEAD
       <img src="logo.png" alt="Vowel Removements">
-      <figcaption>Tagline lol</figcaption>
-=======
-      <img src="logo.png" alt="Vowel Removements" width="320px">
       <figcaption>Tagline</figcaption>
->>>>>>> testing commit no changes
     </figure>
     
   </header>
