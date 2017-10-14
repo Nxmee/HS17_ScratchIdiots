@@ -4,5 +4,5 @@ $(".CatagoryBox").click(function() {
 		$("#playButton").slideDown();
 	}
 	selectedCatagory = parseInt(event.target.data("gameId"));
-	
+	console.log(selectedCatagory);
 })
