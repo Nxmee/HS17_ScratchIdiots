@@ -1,0 +1,52 @@
+{
+	"catagories" [
+		{
+			"title":"Shakespeare's plays"
+			"difficulty":1
+			"names":[
+				"Romeo and Juliet",
+				"A midsummer nights dream",
+				"Hamlet",
+				"Macbeth",
+				"King Lear",
+				"The Taming of the Shrew",
+				"Much Ado About Nothing",
+				"As You Like It",
+				"The Merchant of Venice",
+				"Antony and Cleopatra"
+			]
+		},
+		{
+			"title":"Makes of car"
+			"difficulty":3
+			"names":[
+				"Alfa Romeo",
+				"Aston Martin",
+				"Lamborghini",
+				"Rolls-Royce",
+				"Vauxhall",
+				"Volkswagen",
+				"Mercedes",
+				"Jaguar",
+				"Land Rover",
+				"Tesla"
+			]
+		},
+		{
+			"title":"Brands of phone"
+			"difficulty":2
+			"names":[
+				"Oneplus",
+				"Apple",
+				"Samsung",
+				"Sony",
+				"Blackberry",
+				"Wileyfox",
+				"Nokia",
+				"Huawei",
+				"Motorola",
+				"Google"
+			]
+		},
+	]
+}
