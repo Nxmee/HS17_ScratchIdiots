@@ -7,4 +7,6 @@ while (numbers.length <6){
    numbers.push(num);
   }
 }
+return numbers;
+
 }

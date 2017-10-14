@@ -163,18 +163,32 @@ function playGame(selectedCategory)
 	// Set variables	
 	
 	// Replace Labels
-	$("#category").html(dictionary.categories[selectedCategory].title);
+	$("#category")	.html(dictionary.categories[selectedCategory].title);
 	
 		
 }
 
+var array = ranNum();
+
+var index = 0;
+var randomNum = array[0];
+
+	// Don't know what this does (but think it's necessary)
 $("document").ready(function(){
 	var selectedCategory
+	
 
+	// Submit button pressed
 $("#SubmitButton").click(function() 
-{	
-	alert("You pressed the button");
-
+{		
+	nextWord(selectedCategory, randomNum);
+	index++;
+	console.log("Index:	" + index);
+	randomNum = array[index];
 });
+
+
+
+
 
 });

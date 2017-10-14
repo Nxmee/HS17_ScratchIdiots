@@ -45,7 +45,7 @@ var dictionary =
 				"Blackberry",
 				"Wileyfox",
 				"Nokia",
-				"Huawei",
+				"Huawei"	,
 				"Motorola",
 				"Google"
 			]
@@ -157,9 +157,9 @@ var dictionary =
 	]
 }
 
-alert("words");
-$("#Hint").html("Changing the hint");
 
-
+var foo = dictionary.categories[selectedCategory].names[index];
+var bar = convert(foo);
+$("#Hint").html(bar);
 
 }
