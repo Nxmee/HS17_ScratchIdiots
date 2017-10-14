@@ -1,17 +1,16 @@
 body{
 	font-family:Arial;
-    
+    width: 98%;
+    margin: 0 auto;
 }
 Header h1{
 	font-size:1em;
 }
 nav {
-	margin: 0 auto;
+	margin: 0px auto;
 }
 nav ul{
 	list-style-type:none;
-
-
 }
 nav ul li{
 	display:inline;
@@ -21,5 +20,12 @@ main {
 }
 main h2{
 	font-size:1.25em;
-
+}
+@media screen and (max-width: 400px) {
+body {
+	width: 100%;
+}
+nav {
+	margin: 0 auto;
+}
 }
