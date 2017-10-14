@@ -1,5 +1,5 @@
 body{
-	font-family:Arial;
+	font-family: 'Roboto', sans-serif;
     width: 100%;
     margin: 0 auto;
     background-color: #1b1b1b;
@@ -17,22 +17,6 @@ footer hr, nav hr{
 }
 Header h1{
 	font-size:1em;
-}
-nav {
-	margin: 0px auto;
-	background-color: #1bfdb;
-}
-nav a{
-	text-decoration:none;
-	color:black;
-}
-nav ul{
-	list-style-type:none;
-	font-weight: none;
-}
-nav ul li{
-	display:inline;
-	padding-right:5%;
 }
 main h1 {
 	font-size:1.25em;    
