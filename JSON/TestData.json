@@ -48,5 +48,37 @@
 				"Google"
 			]
 		},
+		{
+			"title":"Works by Charles Dickens"
+			"difficulty":5
+			"names":[
+				"The Pickwick Papers",
+				"Oliver Twist",
+				"Nicholas Nickleby",
+				"David Copperfield",
+				"The Old Curiosity Shop",
+				"A Christmas Carol",
+				"A Tale of Two Cities",
+				"Great Expectations",
+				"Barnaby Rudge",
+				"The Pickwick Papers"
+			]
+		},
+		{
+			"title":"Astronomical Phenomena"
+			"difficulty":6
+			"names":[
+				"Constellation",
+				"Supernova",
+				"Black Hole",
+				"The Big Bang",
+				"Meteor Shower",
+				"Pulsar",
+				"Solar Eclipse",
+				"Asteroid",
+				"Winter solstice",
+				"Supermoon"
+			]
+		},
 	]
 }
