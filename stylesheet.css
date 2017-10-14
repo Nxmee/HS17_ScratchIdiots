@@ -1,0 +1,25 @@
+body{
+	font-family:Arial;
+    
+}
+Header h1{
+	font-size:1em;
+}
+nav {
+	margin: 0 auto;
+}
+nav ul{
+	list-style-type:none;
+
+
+}
+nav ul li{
+	display:inline;
+	padding-right: 5%;
+}
+main {
+}
+main h2{
+	font-size:1.25em;
+
+}
