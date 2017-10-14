@@ -1,10 +1,10 @@
-{
-	"categories" [
-		{
-			"identifier": 0
-			"title":"Shakespeare's plays"
-			"difficulty":1
-			"names":[
+var dictionary =
+	{
+		categories: [
+		{ // 0
+			title:"Shakespeare's plays",
+			difficulty:1,
+			names:[
 				"Romeo and Juliet",
 				"A midsummer nights dream",
 				"Hamlet",
@@ -17,10 +17,10 @@
 				"Antony and Cleopatra"
 			]
 		},
-		{
-			"title":"Makes of car"
-			"difficulty":1
-			"names":[
+		{	// 1
+			title:"Makes of car",
+			difficulty:1,
+			names:[
 				"Alfa Romeo",
 				"Aston Martin",
 				"Lamborghini",
@@ -33,10 +33,10 @@
 				"Tesla"
 			]
 		},
-		{
-			"title":"Brands of phone"
-			"difficulty":2
-			"names":[
+		{ 	// 2
+			title:"Brands of phone",
+			difficulty:2,
+			names:[
 				"OnePlus",
 				"Apple",
 				"Samsung",
@@ -49,10 +49,10 @@
 				"Google"
 			]
 		},
-		{
-			"title":"Works by Charles Dickens"
-			"difficulty":3
-			"names":[
+		{	// 3
+			title:"Works by Charles Dickens",
+			difficulty:3,
+			names:[
 				"The Pickwick Papers",
 				"Oliver Twist",
 				"Nicholas Nickleby",
@@ -65,10 +65,10 @@
 				"The Pickwick Papers"
 			]
 		},
-		{
-			"title":"Astronomical Phenomena"
-			"difficulty":2
-			"names":[
+		{	// 4
+			title:"Astronomical Phenomena",
+			difficulty:2,
+			names:[
 				"Constellation",
 				"Supernova",
 				"Black Hole",
@@ -81,10 +81,10 @@
 				"Supermoon"
 			]
 		},
-		{
-			"title":"Football Teams"
-			"difficulty":3
-			"names":[
+		{	// 5
+			title:"Football Teams",
+			difficulty:3,
+			names:[
 				"Chelsea",
 				"Manchester United",
 				"Átletico Madrid",
@@ -98,10 +98,10 @@
 				"Inter Milan"
 			]
 		},
-		{
-			"title":"Superheroes"
-			"difficulty":3
-			"names":[
+		{	// 6
+			title:"Superheroes",
+			difficulty:3,
+			names:[
 				"Captain America",
 				"Iron Man",
 				"Black Widow",
@@ -115,9 +115,9 @@
 				"Captain Cold"
 			]
 		},
-		{
-			"title":"Movie quotes"
-			"difficulty":3
+		{	// 7
+			title:"Movie quotes",
+			difficulty:3,
 			"names":[
 				"I'll be back",
 				"Frankly, my dear, I don't give a damn",
@@ -132,10 +132,10 @@
 				"Houston, we have a problem"
 			]
 		},
-		{
-			"title":"Songs"
-			"difficulty":1
-			"names":[
+		{	// 8
+			title:"Songs",
+			difficulty:1,
+			names:[
 				"Take On Me",
 				"Billy Jean",
 				"Every Breath You Take",
@@ -145,12 +145,13 @@
 				"You Spin Me Round",
 				"Total Eclipse of the Heart",
 				"Eye of the Tiger",
-				"Sweet Child O' Mine",
+				"Sweet Child O Mine",
 				"I Wanna Dance With Somebody",
 				"Under Pressure",
 				"Papa Don't Preach",
 				"Karma Chameleon"
 			]
-		},
+		}
+		
 	]
 }

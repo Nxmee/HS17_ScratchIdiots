@@ -160,6 +160,11 @@ function playGame(selectedCategory)
 	]
 }
 	
-	document.getElementById("category").innerHTML = "New text inside the text element!";
+	// Set variables
+	String categoryName = dictionary.categories[selectedCategory].title;
+	
+	// Replace Labels
+	$("#category").html(dictionary.categories[selectedCategory].title);
+	
 	
 }
