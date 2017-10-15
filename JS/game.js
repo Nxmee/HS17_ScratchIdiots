@@ -56,19 +56,26 @@ function submitAnswer(){
 	}
 	else
 	{
-		endgame(selectedCategory, score);
+		${'#nameBox'}.show();
+		${'#ScoreScore'}.val(score.toString());
+		${'#ScoreTime'}.val(((5 * duration) - 5).toString());
+		${'#ScoreCategory'}.val(selectedCategory.toString());
+		${'.hideable'}.hide();
 	}
 
 	document.getElementById('userBox').value = '';
-
-	
 };
 
-// Start button pressed
 $("#StartButton").click(function(){
 	nextWord(selectedCategory, randomNum, round);
 	
 	createClock(duration);
+});
+
+// Enter button pressed
+$("#EnterButton").click(function(){
+	${'#SubmitForm'}.submit();
+	window.location = "PlayGame.html";
 });
 
 
@@ -95,8 +102,6 @@ function(){
 
 $('#timer').pietimer('start');
 };
-
-
 
 
 $("#EnterButton").click(function(){

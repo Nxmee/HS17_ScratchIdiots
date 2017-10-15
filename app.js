@@ -18,7 +18,7 @@ app.post('/score', function(request,response){
     var time = request.body.time;
 
     var database = csv.createCsvFileWriter("scores.csv", {"flags": "a"});
-    var data = [category,name, score, time];
+    var data = [category, name, score, time];
 
     database.writeRecord(data);
     database.writeStream.end();
