@@ -157,6 +157,8 @@ var dictionary =
 	]
 	}
 
+	
+	
 // Set variables
 var categoryName = dictionary.categories[selectedCategory].title;
 console.log("Category name:	" + categoryName);

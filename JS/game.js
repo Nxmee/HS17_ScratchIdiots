@@ -158,23 +158,9 @@ function playGame(selectedCategory)
 		}
 		
 	]
-	}
-	
+	}	
 	
 }
-
-
-	var array = ranNum();
-	var index = 0;
-	var randomNum = array[0];
-	var score = 0;
-	var round = 0;
-	
-	// retrieve selected category from local storage
-	//var selectedCategory = localStorage["category"];
-	var loadedJSON = $.getJSON( "./JSON/TestData.json");
-	var selectedCategory = loadedJSON.categories;
-	
 
 function getCook(cookiename) 
 	  {
@@ -183,15 +169,34 @@ function getCook(cookiename)
 	  // Return everything after the equal sign, or an empty string if the cookie name not found
 	  return unescape(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./,"") : "");
 	  }
+	
+	
+	var array = ranNum();
+	//console.log(array[0] + array[1] + array[2] + array[3]);
+	var index = 0;
+	var randomNum = array[0];
+	var score = 0;
+	var round = 0;
+	
+	// retrieve selected category from local storage
+<<<<<<< Updated upstream
+	//var selectedCategory = localStorage["category"];
+	var loadedJSON = $.getJSON( "./JSON/TestData.json");
+	var selectedCategory = loadedJSON.categories;
+	
+=======
+	var selectedCategory = localStorage.getItem("category");
+	console.log("Selected category is " + selectedCategory);
+>>>>>>> Stashed changes
+
 
 	// Don't know what this does (but think it's necessary)
 $("document").ready(function(){
 
-	var selectedCategory
-	document.getElementById('playerName').value = getCook('Name');
+	document.getElementById('playerName').value = getCook('Name');	
 
 	// Submit button pressed
-$("#SubmitAnswer").click(function(){	
+$("#SubmitButton").click(function(){	
 	if (round < 5)
 	{
 		
@@ -218,8 +223,6 @@ $("#EnterButton").click(function(){
 	if (document.getElementById('playerName').value != ""){
 		document.cookie = ("Name = " + document.getElementById('playerName').value);
 	}
-	
 });
-
 
 });

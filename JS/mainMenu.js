@@ -16,7 +16,7 @@ $(".CategoryBox").click(function() {
 	
 	
 	// putting category in local storage
-	localStorage["category"] = selectedCategory;
+	localStorage.setItem("category", selectedCategory);
 
 });
 
@@ -24,7 +24,6 @@ $(".CategoryBox").click(function() {
 $("#PlayButton").click(function() {	
 	
 	window.location = "PlayGame.html";	
-	playGame(selectedCategory);
 	
 });
 
