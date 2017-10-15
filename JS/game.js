@@ -171,7 +171,9 @@ function playGame(selectedCategory)
 	var round = 0;
 	
 	// retrieve selected category from local storage
-	var selectedCategory = localStorage["category"];
+	//var selectedCategory = localStorage["category"];
+	var loadedJSON = $.getJSON( "./JSON/TestData.json");
+	var selectedCategory = loadedJSON.categories;
 	
 
 function getCook(cookiename) 
