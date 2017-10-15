@@ -25,21 +25,19 @@ function getCook(cookiename)
 
 	// Don't know what this does (but think it's necessary)
 $("document").ready(function(){
+
 	console.log("document loaded")
+
 
 
 	$('#userBox').keypress(function(e){
     if ( e.which == 13 ) // Enter key = keycode 13
     {
-    	//submitAnswer();
-    	//restartClock();
-        return false;
+    	alert("Pressed enter");
+		timerEnded();
+        //return false;
     }
 });
-function restartClock(){
-	//$('#timer').pietimer.seconds = 10;
-	$('#timer').pietimer('start');
-}
 
 
 var overallDuration = 0;
@@ -82,6 +80,8 @@ $("#EnterButton").click(function(){
 });
 
 
+
+
 // Makes timer exist
 function createClock(duration){
 $('#timer').pietimer({
@@ -92,7 +92,7 @@ width: 100,
 },
 
 
-function(){
+function timerEnded(){
 	submitAnswer();
 	
 	if (duration >= 4.5){
