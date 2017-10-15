@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var csv = require('ya-csv');
 
 var app = express();
-app.use(express.static(path.join(__dirname, "")));
+app.use(express.static("/"));
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.get("/", function(request, response){
