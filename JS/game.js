@@ -32,6 +32,7 @@ function restartClock(){
 	$('#timer').pietimer('start');
 }
 
+
 var overallDuration = 0;
 function submitAnswer(){	
 	if (round < 5)
