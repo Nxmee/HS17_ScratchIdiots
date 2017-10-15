@@ -25,7 +25,6 @@ function getCook(cookiename)
 	// Don't know what this does (but think it's necessary)
 $("document").ready(function(){
 	console.log("document loaded")
-	document.getElementById('playerName').value = getCook('Name');	
 
 
 	$('#userBox').keypress(function(e){
@@ -55,6 +54,7 @@ function submitAnswer(){
 	}
 	else
 	{
+		console.log("game over");
 		$('#nameBox').show();
 		$('#ScoreScore').val(score.toString());
 		$('#ScoreTime').val(((5 * duration) - 5).toString());
