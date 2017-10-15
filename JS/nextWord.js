@@ -170,7 +170,7 @@ console.log("Jumbled:	" + jumbled);
 // Set labels
 $("#Hint").html(jumbled);
 $("#category").html(categoryName);
-$("#round").html("Round: " + round);
+$("#round").html("Round: " + round + 1);
 
 }
 
