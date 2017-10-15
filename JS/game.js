@@ -17,7 +17,6 @@ function getCook(cookiename)
 	var round = 0;
 	
 	// retrieve selected category from local
-	storage
 	var selectedCategory = localStorage.getItem("category");
 	console.log("Selected category is " + selectedCategory);
 	var duration = localStorage.getItem("duration");
