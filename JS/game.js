@@ -179,16 +179,9 @@ function getCook(cookiename)
 	var round = 0;
 	
 	// retrieve selected category from local storage
-<<<<<<< Updated upstream
-	//var selectedCategory = localStorage["category"];
-	var loadedJSON = $.getJSON( "./JSON/TestData.json");
-	var selectedCategory = loadedJSON.categories;
-	
-=======
+
 	var selectedCategory = localStorage.getItem("category");
 	console.log("Selected category is " + selectedCategory);
->>>>>>> Stashed changes
-
 
 	// Don't know what this does (but think it's necessary)
 $("document").ready(function(){
