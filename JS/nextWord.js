@@ -1,4 +1,4 @@
-function nextWord(selectedCategory, index){
+function nextWord(selectedCategory, index, round){
 var dictionary =
 	{
 		categories: [
@@ -155,22 +155,26 @@ var dictionary =
 		}
 		
 	]
-}
+	}
 
 // Set variables
 var categoryName = dictionary.categories[selectedCategory].title;
+console.log("Category name:	" + categoryName);
 var currentName = dictionary.categories[selectedCategory].names[index];
+console.log("Current name:	" + currentName);
 var jumbled = convert(currentName);
+console.log("Jumbled:	" + jumbled);
 
 // Set labels
 $("#Hint").html(jumbled);
 $("#category").html(categoryName);
+$("#round").html("Round: " + round);
 
 }
 
-function checkInput(selectedCategory, index){
+function checkInput(selectedCategory, index, score){
 	var userInput = document.getElementsByName('userInput')[0].value;
-	
+	console.log("User Input:	" + userInput);
 	var dictionary =
 	{
 		categories: [
@@ -324,19 +328,24 @@ function checkInput(selectedCategory, index){
 				"Papa Don't Preach",
 				"Karma Chameleon"
 			]
-		}
-		
+		}		
 	]
+	
 	}
+	
 	var correctAnswer = dictionary.categories[selectedCategory].names[index];
 	console.log("Correct answer:	"  + correctAnswer);
+
 	if (userInput.toLowerCase() == correctAnswer.toLowerCase()){
-		alert("Correct!");
+		score++;
+		alert("Correct! Your score is now:   " + score);
 		console.log("Correct answer!");
 	}
 	else{
 		console.log("Incorrect - sorry!");
 		alert("Incorrect!");
 	}
+	
+	return score;
 	
 }

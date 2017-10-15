@@ -13,6 +13,10 @@ $(".CategoryBox").click(function() {
 	$(".CategoryBox").css("background-color","#0277bd");
 	$(this).css("background-color","#58a5f0");
 	console.log("click");
+	
+	
+	// putting category in local storage
+	localStorage["category"] = selectedCategory;
 
 });
 

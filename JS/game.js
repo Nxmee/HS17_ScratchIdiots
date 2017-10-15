@@ -160,34 +160,46 @@ function playGame(selectedCategory)
 	]
 	}
 	
-	// Replace Labels	
 	
-	
-
 }
 
-var array = ranNum();
 
-var index = 0;
-var randomNum = array[0];
+	var array = ranNum();
+	var index = 0;
+	var randomNum = array[0];
+	var score = 0;
+	var round = 0;
+	
+	// retrieve selected category from local storage
+	var selectedCategory = localStorage["category"];
+	
 
 	// Don't know what this does (but think it's necessary)
 $("document").ready(function(){
-	var selectedCategory 
+	 
 	
 
 	// Submit button pressed
-$("#SubmitButton").click(function() 
-{		
-	checkInput(2, randomNum);	
+$("#SubmitAnswer").click(function(){	
+	if (round < 5)
+	{
+		
+	score = checkInput(selectedCategory, randomNum, score);
 	index++;
 	console.log("Index:	" + index);
-	randomNum = array[index];
-	nextWord(2, randomNum);
+	randomNum = array[index];		
+	round++;
+	nextWord(selectedCategory, randomNum, round); 
+	}
+	else
+	{
+		// ==== Code for end goes here ====
+	}
 });
 
+// Start button pressed
 $("#StartButton").click(function(){
-	
+	nextWord(selectedCategory, randomNum, round);
 	
 });
 
