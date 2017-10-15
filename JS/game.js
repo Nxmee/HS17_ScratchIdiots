@@ -27,6 +27,15 @@ $("document").ready(function(){
 	console.log("document loaded")
 	document.getElementById('playerName').value = getCook('Name');	
 
+
+	$('#userBox').keypress(function(e){
+    if ( e.which == 13 ) // Enter key = keycode 13
+    {
+    	//submitAnswer();
+    	//restartClock();
+        return false;
+    }
+});
 function restartClock(){
 	//$('#timer').pietimer.seconds = 10;
 	$('#timer').pietimer('start');
