@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, "")));
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.get("/", function(request, response){
-    response.sendFile(path.join(__dirname, "./ServerTest/ServerTest.html"));
+    response.sendFile(path.join(__dirname, "ServerTest.html"));
 });
 
 app.post('/score', function(request,response){
@@ -17,17 +17,17 @@ app.post('/score', function(request,response){
     var score = request.body.score;
     var time = request.body.time;
 
-    var database = csv.createCsvFileWriter("./ServerTest/scores.csv", {"flags": "a"});
+    var database = csv.createCsvFileWriter("scores.csv", {"flags": "a"});
     var data = [category,name, score, time];
 
     database.writeRecord(data);
     database.writeStream.end();
-    response.sendFile(path.join(__dirname, "./ServerTest/ServerTest.html"));
+    response.sendFile(path.join(__dirname, "ServerTest.html"));
 
 });
 
 app.get("/score", function(request, response) {
-    var reader = csv.createCsvFileReader("./ServerTest/scores.csv");
+    var reader = csv.createCsvFileReader("scores.csv");
     reader.setColumnNames(['category','name', 'score', 'time']);
 
     var scores = [];
