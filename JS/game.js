@@ -20,6 +20,7 @@ function getCook(cookiename)
 	var selectedCategory = localStorage.getItem("category");
 	console.log("Selected category is " + selectedCategory);
 	var duration = localStorage.getItem("duration");
+	var duration_original = duration
 	console.log("Duration: " + duration);
 
 	// Don't know what this does (but think it's necessary)
@@ -43,7 +44,7 @@ function restartClock(){
 
 var overallDuration = 0;
 function submitAnswer(){	
-	if (round < 5)
+	if (round < 4)
 	{		
 		score = checkInput(selectedCategory, randomNum, score);
 		index++;
@@ -54,18 +55,21 @@ function submitAnswer(){
 	}
 	else
 	{
+		round++;
 		console.log("game over");
 		$('#nameBox').show();
 		$('#ScoreScore').val(score.toString());
-		$('#ScoreTime').val(((5 * duration) - 5).toString());
+		$('#ScoreTime').val(((5 * duration_original) - 5).toString());
 		$('#ScoreCategory').val(selectedCategory.toString());
 		$('.hideable').hide();
+		$("#round").html("Congratulations, you scored: " + score);
 	}
 
 	document.getElementById('userBox').value = '';
 };
 
 $("#StartButton").click(function(){
+	$('#StartButton').hide();
 	nextWord(selectedCategory, randomNum, round);
 	
 	createClock(duration);
@@ -74,7 +78,7 @@ $("#StartButton").click(function(){
 // Enter button pressed
 $("#EnterButton").click(function(){
 	$('#SubmitForm').submit();
-	window.location = "PlayGame.html";
+	window.location = "index.html";
 });
 
 
@@ -94,7 +98,7 @@ function(){
 	if (duration >= 4.5){
 		duration = duration - 0.5;
 	}
-	if (round != 5){
+	if (round < 5){
 	createClock(duration);	
 	}
 })
