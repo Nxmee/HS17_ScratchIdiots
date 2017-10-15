@@ -52,7 +52,7 @@ function submitAnswer(){
 		nextWord(selectedCategory, randomNum, round); 		
 	}
 	else
-	{
+	{	score = checkInput(selectedCategory, randomNum, score);
 		round++;
 		console.log("game over");
 		$('#nameBox').show();
