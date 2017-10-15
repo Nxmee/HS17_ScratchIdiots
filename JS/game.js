@@ -56,11 +56,11 @@ function submitAnswer(){
 	}
 	else
 	{
-		${'#nameBox'}.show();
-		${'#ScoreScore'}.val(score.toString());
-		${'#ScoreTime'}.val(((5 * duration) - 5).toString());
-		${'#ScoreCategory'}.val(selectedCategory.toString());
-		${'.hideable'}.hide();
+		$('#nameBox').show();
+		$('#ScoreScore').val(score.toString());
+		$('#ScoreTime').val(((5 * duration) - 5).toString());
+		$('#ScoreCategory').val(selectedCategory.toString());
+		$('.hideable').hide();
 	}
 
 	document.getElementById('userBox').value = '';
@@ -74,7 +74,7 @@ $("#StartButton").click(function(){
 
 // Enter button pressed
 $("#EnterButton").click(function(){
-	${'#SubmitForm'}.submit();
+	$('#SubmitForm').submit();
 	window.location = "PlayGame.html";
 });
 
