@@ -33,7 +33,7 @@ $("document").ready(function(){
 	$('#userBox').keypress(function(e){
     if ( e.which == 13 ) // Enter key = keycode 13
     {
-    	alert("Pressed enter");
+    	
 		timerEnded();
         //return false;
     }
