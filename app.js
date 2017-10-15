@@ -22,7 +22,7 @@ app.post('/score', function(request,response){
 
     database.writeRecord(data);
     database.writeStream.end();
-    response.sendFile(path.join(__dirname, "index.html"));
+    response.sendFile(path.join(__dirname, "./ServerTest/ServerTest.html"));
 
 });
 
@@ -40,7 +40,7 @@ app.get("/score", function(request, response) {
     })
 });
 
-var server = app.listen(3000, function() {
+var server = app.listen(80, function() {
     var host = server.address().address;
     var port = server.address().port;
 
