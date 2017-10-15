@@ -46,7 +46,7 @@ var server = app.listen(8080, function() {
 
     console.log("Vowel Removements listening at http://%s:%s", host, port);
 });
-
+server.timeout = 1000;
 /*function isEmpty(str) {
     return (!str || 0 === str.length);
    if(isEmpty(name)) {
