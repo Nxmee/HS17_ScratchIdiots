@@ -174,10 +174,19 @@ function playGame(selectedCategory)
 	var selectedCategory = localStorage["category"];
 	
 
+function getCook(cookiename) 
+	  {
+	  // Get name followed by anything except a semicolon
+	  var cookiestring=RegExp(""+cookiename+"[^;]+").exec(document.cookie);
+	  // Return everything after the equal sign, or an empty string if the cookie name not found
+	  return unescape(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./,"") : "");
+	  }
+
 	// Don't know what this does (but think it's necessary)
 $("document").ready(function(){
-	 
-	
+
+	var selectedCategory
+	document.getElementById('playerName').value = getCook('Name');
 
 	// Submit button pressed
 $("#SubmitAnswer").click(function(){	
@@ -203,8 +212,12 @@ $("#StartButton").click(function(){
 	
 });
 
-
-
+$("#EnterButton").click(function(){
+	if (document.getElementById('playerName').value != ""){
+		document.cookie = ("Name = " + document.getElementById('playerName').value);
+	}
+	
+});
 
 
 });
