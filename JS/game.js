@@ -48,6 +48,8 @@ function submitAnswer(){
 		endgame(selectedCategory, score);
 	}
 
+	document.getElementById('userBox').value = '';
+
 	
 };
 
