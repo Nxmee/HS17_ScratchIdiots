@@ -1,23 +1,22 @@
+
 body{
 	font-family: 'Roboto', sans-serif;
     width: 100%;
     margin: 0 auto;
     background-color: #1b1b1b;
 }
+
 #wrapper {
 	background-color: #424242; 
 	width: 80%;
 	margin: 0px auto;
 	align-content: center;
 }
-footer hr, nav hr{
-    border: 0;
-    height: 1px;
-    
-}
+
 Header h1{
 	font-size:1em;
 }
+
 main h1 {
 	font-size:1.25em;    
     font-weight:bold;
@@ -29,11 +28,11 @@ main h2{
 
 .gamebox {
 	background-color: #0277bd;
-	width: 60%;
+	width: 40%;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 3%;
-	margin-top: 3%;
+	margin-bottom: 2%;
+	margin-top: 2%;
 	padding: 3% 2%;
 	box-shadow: 8px 8px 40px;
 }
@@ -52,12 +51,14 @@ main h2{
 	font-size: 1.2em;
 	text-align: center;
 }
+
+
 form { 
 	margin: 0 auto; 
 	width:100%;
 	text-align: center;
 }
-#button {
+button {
 	width: 100px;
 	height: 50px;
 	background-color: #58a5f0;
