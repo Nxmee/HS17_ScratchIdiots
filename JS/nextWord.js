@@ -340,14 +340,13 @@ function checkInput(selectedCategory, index, score){
 
 	if (userInput.toLowerCase() == correctAnswer.toLowerCase()){
 		score++;
-		alert("Correct! Your score is now:   " + score);
+		$("#status").html("Correct! Your score is:	" + score);
 		console.log("Correct answer!");
 	}
 	else{
 		console.log("Incorrect - sorry!");
-		alert("Incorrect!");
+		$("#status").html("Incorrect!");
 	}
-	
 	return score;
 	
 }

@@ -1,167 +1,5 @@
 // dictionary.categories[selectedCategory].title
 
-function playGame(selectedCategory)
-{
-	var dictionary =
-	{
-		categories: [
-		{ // 0
-			title:"Shakespeare's plays",
-			difficulty:1,
-			names:[
-				"Romeo and Juliet",
-				"A midsummer nights dream",
-				"Hamlet",
-				"Macbeth",
-				"King Lear",
-				"The Taming of the Shrew",
-				"Much Ado About Nothing",
-				"As You Like It",
-				"The Merchant of Venice",
-				"Antony and Cleopatra"
-			]
-		},
-		{	// 1
-			title:"Makes of car",
-			difficulty:1,
-			names:[
-				"Alfa Romeo",
-				"Aston Martin",
-				"Lamborghini",
-				"Rolls-Royce",
-				"Vauxhall",
-				"Volkswagen",
-				"Mercedes",
-				"Jaguar",
-				"Land Rover",
-				"Tesla"
-			]
-		},
-		{ 	// 2
-			title:"Brands of phone",
-			difficulty:2,
-			names:[
-				"OnePlus",
-				"Apple",
-				"Samsung",
-				"Sony",
-				"Blackberry",
-				"Wileyfox",
-				"Nokia",
-				"Huawei",
-				"Motorola",
-				"Google"
-			]
-		},
-		{	// 3
-			title:"Works by Charles Dickens",
-			difficulty:3,
-			names:[
-				"The Pickwick Papers",
-				"Oliver Twist",
-				"Nicholas Nickleby",
-				"David Copperfield",
-				"The Old Curiosity Shop",
-				"A Christmas Carol",
-				"A Tale of Two Cities",
-				"Great Expectations",
-				"Barnaby Rudge",
-				"The Pickwick Papers"
-			]
-		},
-		{	// 4
-			title:"Astronomical Phenomena",
-			difficulty:2,
-			names:[
-				"Constellation",
-				"Supernova",
-				"Black Hole",
-				"The Big Bang",
-				"Meteor Shower",
-				"Pulsar",
-				"Solar Eclipse",
-				"Asteroid",
-				"Winter solstice",
-				"Supermoon"
-			]
-		},
-		{	// 5
-			title:"Football Teams",
-			difficulty:3,
-			names:[
-				"Chelsea",
-				"Manchester United",
-				"Átletico Madrid",
-				"FC Barcelona",
-				"Real Madrid",
-				"Paris Saint Germain",
-				"Sheffield Wednesday",
-				"FC Bayern Munich",
-				"Crystal Palace",
-				"Juventus",
-				"Inter Milan"
-			]
-		},
-		{	// 6
-			title:"Superheroes",
-			difficulty:3,
-			names:[
-				"Captain America",
-				"Iron Man",
-				"Black Widow",
-				"The Hulk",
-				"Hawkeye",
-				"The Flash",
-				"Green Arrow",
-				"Firestorm",
-				"Black Canary",
-				"Heat Wave",
-				"Captain Cold"
-			]
-		},
-		{	// 7
-			title:"Movie quotes",
-			difficulty:3,
-			"names":[
-				"I'll be back",
-				"Frankly, my dear, I don't give a damn",
-				"I'm gonna make him an offer he can't refuse",
-				"ET phone home",
-				"Here's looking at you, kid",
-				"Go ahead, make my day",
-				"There's no place like home",
-				"You can't handle the truth",
-				"You're gonna need a bigger boat",
-				"Show me the money",
-				"Houston, we have a problem"
-			]
-		},
-		{	// 8
-			title:"Songs",
-			difficulty:1,
-			names:[
-				"Take On Me",
-				"Billy Jean",
-				"Every Breath You Take",
-				"Livin' on a Prayer",
-				"Pour Some Sugar On Me",
-				"Another One Bites The Dust",
-				"You Spin Me Round",
-				"Total Eclipse of the Heart",
-				"Eye of the Tiger",
-				"Sweet Child O Mine",
-				"I Wanna Dance With Somebody",
-				"Under Pressure",
-				"Papa Don't Preach",
-				"Karma Chameleon"
-			]
-		}
-		
-	]
-	}	
-	
-}
-
 function getCook(cookiename) 
 	  {
 	  // Get name followed by anything except a semicolon
@@ -179,38 +17,74 @@ function getCook(cookiename)
 	var round = 0;
 	
 	// retrieve selected category from local storage
-
 	var selectedCategory = localStorage.getItem("category");
 	console.log("Selected category is " + selectedCategory);
+	var duration = localStorage.getItem("duration");
+	console.log("Duration: " + duration);
 
 	// Don't know what this does (but think it's necessary)
 $("document").ready(function(){
-
+	console.log("document loaded")
 	document.getElementById('playerName').value = getCook('Name');	
 
-	// Submit button pressed
-$("#SubmitButton").click(function(){	
+function restartClock(){
+	//$('#timer').pietimer.seconds = 10;
+	$('#timer').pietimer('start');
+}
+
+var overallDuration = 0;
+function submitAnswer(){	
 	if (round < 5)
-	{
-		
-	score = checkInput(selectedCategory, randomNum, score);
-	index++;
-	console.log("Index:	" + index);
-	randomNum = array[index];		
-	round++;
-	nextWord(selectedCategory, randomNum, round); 
+	{		
+		score = checkInput(selectedCategory, randomNum, score);
+		index++;
+		console.log("Index:	" + index);
+		randomNum = array[index];		
+		round++;
+		nextWord(selectedCategory, randomNum, round); 		
 	}
 	else
 	{
-		// ==== Code for end goes here ====
+		endgame(selectedCategory, score);
 	}
-});
+
+	
+};
 
 // Start button pressed
 $("#StartButton").click(function(){
 	nextWord(selectedCategory, randomNum, round);
 	
+	createClock(duration);
 });
+
+
+// Makes timer exist
+function createClock(duration){
+$('#timer').pietimer({
+seconds: duration,
+color: 'rgba(0,0,0,0.8)',
+height:100,
+width: 100,
+},
+
+
+function(){
+	submitAnswer();
+	
+	if (duration >= 4.5){
+		duration = duration - 0.5;
+	}
+	if (round != 5){
+	createClock(duration);	
+	}
+})
+
+$('#timer').pietimer('start');
+};
+
+
+
 
 $("#EnterButton").click(function(){
 	if (document.getElementById('playerName').value != ""){

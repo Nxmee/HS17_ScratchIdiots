@@ -35,6 +35,7 @@ main h2{
 	margin-top: 2%;
 	padding: 3% 2%;
 	box-shadow: 8px 8px 40px;
+	
 }
 .gamebox h1 {
 	padding: 0% 2%;
@@ -58,7 +59,9 @@ form {
 	width:100%;
 	text-align: center;
 }
-button {
+
+#button {
+	
 	width: 100px;
 	height: 50px;
 	background-color: #58a5f0;
@@ -105,14 +108,15 @@ button {
     background-color: #0277bd;
     height: 150px;
     width: 250px;
-    text-align: center;
+    
     padding: 10%, 0%;
     margin: 4%;        
     vertical-align:central;
     
-      display:flex;
-	  justify-content:center;
-	  align-items:center;
+	text-align: center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
     
     box-shadow: 8px 8px 40px;        
 }
@@ -136,21 +140,34 @@ button {
 }
 
 
+
+
 #DivButton{
 	width: 50%;
 	margin: 0 auto;
 	text-align: center;
+	visibility: hidden;
 	
 }
 
 #PlayButton{
+  border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 	
 	width: 50%;
 	margin-left: auto ;
     margin-right: auto ;
 	background-color: #004c8c;
-	border: 0 ;
-	visibility:	visible;
+	border: 0 ;	
 	height: 15%;
 	box-shadow: 8px 8px 40px;
 }
@@ -170,6 +187,66 @@ margin-right: auto;
 margin-left: auto;
 padding: 1% 2%;
 }
+
+#status{
+	text-align:	center;
+	
+}
+
+
+#timeDiv{
+	text-align:center;
+	padding: 10px;
+	visibility: hidden;
+	
+}
+#StartButton{
+	text-align:center;
+	margin:0 auto;
+}
+#EnterButton{
+	text-align:center;
+	margin:0 auto;
+}
+button{
+	border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.buttonDesign{
+  border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+	
+	width: 50%;
+	margin-left: auto ;
+    margin-right: auto ;
+	background-color: #004c8c;
+	border: 0 ;	
+	height: 15%;
+	box-shadow: 8px 8px 40px;
+}
+#WelcomeScreen{
+	visibility:hidden;
+}
+
 @media screen and (max-width:1219px){
 #CatWrapper {
     grid-template-columns:   50% 50%;
@@ -198,4 +275,17 @@ header img{
 	flex-direction:column;
 	width:100%;
 
+}
+#EnterButton{
+	  border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
